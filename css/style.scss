@@ -1,0 +1,31 @@
+
+button{
+  margin:auto;
+  -webkit-appearance: none;
+  border:none;
+  background: orange;
+  padding:6px;
+  &:active{
+    background-color: darkgoldenrod;
+  }
+}
+
+h1{
+  text-align: center;
+}
+
+.main{
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid orange;
+  padding: 15px;
+}
+
+section{
+  width: 60%;
+  margin: 0 auto 100px auto;
+}
