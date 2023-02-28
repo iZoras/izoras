@@ -1,3 +1,6 @@
+body {
+
+}
 
 button {
   margin: auto;
@@ -24,6 +27,7 @@ h1 {
   flex-direction: column;
   border: 3px solid orange;
   padding: 15px;
+  overflow: hidden;
 }
 
 section {
@@ -38,4 +42,10 @@ section {
   button {
     width: 100%;
   }
+}
+
+.newCalculator {
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
 }

@@ -344,3 +344,155 @@ isEmptyButtonTwo.addEventListener("click", function () {
 
 
 /*19t-assigment*/
+
+const salarySum = (obj) => {
+  let sum = 0;
+  if (isEmpty(obj)) {
+    alert("Сумма зарплат = " + sum);
+    return;
+  }
+  for (let key in obj) {
+    sum += +obj[key];
+  }
+  alert("Сумма зарплат = " + sum);
+}
+
+let salarySumButton = document.getElementById("salarySum");
+salarySumButton.addEventListener("click", function () {
+  salarySum(user)
+});
+
+
+/*20t-assigment*/
+
+const prodOfNumeric = (obj) => {
+  if (isEmpty(obj)) {
+    alert("Объект пуст");
+    return;
+  }
+
+  let numericProd = 1;
+
+  for (let key in obj) {
+    if (typeof (obj[key]) === 'number') {
+      obj[key] *= 2;
+    }
+  }
+}
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+let showMenuObjButton = document.getElementById("showMenu");
+showMenuObjButton.addEventListener("click", function () {
+  showObject(menu);
+})
+
+
+let prodOfNumericButton = document.getElementById("prodOfNumeric");
+prodOfNumericButton.addEventListener("click", function () {
+  prodOfNumeric(menu);
+  if (!isEmpty(menu)) {
+    showObject(menu);
+  }
+});
+
+
+/*21st-assigment*/
+
+let calculator = {
+  a: 0,
+  b: 0,
+  read() {
+    this.a = prompt('Введите число a');
+    this.b = prompt('Введите число b');
+  },
+  sum() {
+    return +this.a + +this.b;
+  },
+  mul() {
+    return +this.a * +this.b;
+  },
+}
+
+let readButton = document.getElementById("read");
+let sumContainer = document.getElementById("sum");
+let mulContainer = document.getElementById("mul");
+readButton.addEventListener("click", function () {
+  calculator.read();
+  sumContainer.innerHTML = calculator.sum();
+  mulContainer.innerHTML = calculator.mul();
+});
+
+
+/*22nd-assigment*/
+
+
+function CalculatorConstructor() {
+  this.a = 0;
+  this.b = 0;
+
+  this.read = function () {
+    this.a = prompt('Введите число a');
+    this.b = prompt('Введите число b');
+  }
+  this.sum = function () {
+    return +this.a + +this.b;
+  }
+  this.mul = function () {
+    return +this.a * +this.b;
+  }
+}
+
+let addCalcButton = document.getElementById("newCalculator");
+addCalcButton.addEventListener("click", function () {
+  let newCalculator = new CalculatorConstructor();
+  let btnID = `${Math.random()}`;
+  let newP_1_ID = `${Math.random()}`;
+  let newP_2_ID = `${Math.random()}`;
+  let newP_3_ID = `${Math.random()}`;
+  let newP_4_ID = `${Math.random()}`;
+
+  let newDiv = document.createElement("div");
+  newDiv.setAttribute("class", "newCalculator");
+
+  let newButton = document.createElement("button");
+  newButton.setAttribute("id", btnID);
+  newButton.textContent = "Посчитать";
+
+  let newP_1 = document.createElement("p");
+  newP_1.setAttribute("id", newP_1_ID);
+  newP_1.textContent = "a = " + newCalculator.a;
+
+  let newP_2 = document.createElement("p");
+  newP_2.setAttribute("id", newP_2_ID);
+  newP_2.textContent = "b = " + newCalculator.b;
+
+  let newP_3 = document.createElement("p");
+  newP_3.setAttribute("id", newP_3_ID);
+  newP_3.textContent = "sum() = " + newCalculator.sum();
+
+  let newP_4 = document.createElement("p");
+  newP_4.setAttribute("id", newP_4_ID);
+  newP_4.textContent = "mul() =" + newCalculator.mul();
+
+  let parentDiv = document.getElementById("parentDiv");
+  let newCalc = parentDiv.appendChild(newDiv);
+  newCalc.appendChild(newButton);
+  newCalc.appendChild(newP_1);
+  newCalc.appendChild(newP_2);
+  newCalc.appendChild(newP_3);
+  newCalc.appendChild(newP_4);
+
+  let calcBtn = document.getElementById(btnID);
+  calcBtn.addEventListener("click", function () {
+    newCalculator.read();
+    newP_1.textContent = "a = " + newCalculator.a;
+    newP_2.textContent = "b = " + newCalculator.b;
+    newP_3.textContent = "sum() = " + newCalculator.sum();
+    newP_4.textContent = "mul() =" + newCalculator.mul();
+  })
+})

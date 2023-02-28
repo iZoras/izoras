@@ -70,12 +70,12 @@
     <div class="container">
       <h1>4 задание</h1>
       <span style="text-align: center;">Что выведет скрипт?</span>
-      <pre><code>
-        let name = "Ilya";
-        alert( `hello ${1}` ); // --> hello 1
-        alert( `hello ${"name"}` ); // --> hello name
-        alert( `hello ${name}` ); // --> hello Ilya
-      </code></pre>
+      <code>
+        let name = "Ilya";<br>
+        alert( `hello ${1}` ); // --> hello 1<br>
+        alert( `hello ${"name"}` ); // --> hello name<br>
+        alert( `hello ${name}` ); // --> hello Ilya<br>
+      </code>
     </div>
   </section>
   <section class="5th-assignment">
@@ -88,7 +88,8 @@
   <section class="6th-assigment">
     <div class="container">
       <h1>6 задание</h1>
-      <span>Используя конструкцию if..else, напишите код, который будет спрашивать: „Какое «официальное» название JavaScript?“ <br>Если пользователь вводит «ECMAScript», то показать: «Верно!», в противном случае – отобразить: «Не знаете? ECMAScript!»</span>
+      <span>Используя конструкцию if..else, напишите код, который будет спрашивать: „Какое «официальное» название JavaScript?“ <br>
+        Если пользователь вводит «ECMAScript», то показать: «Верно!», в противном случае – отобразить: «Не знаете? ECMAScript!»</span>
       <button id="whyJS">Опрос</button>
     </div>
   </section>
@@ -110,9 +111,12 @@
   <section class="8th-assigment">
     <div class="container">
       <h1>8 задание</h1>
-      <span>Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно. «Включительно» означает, что значение переменной age может быть равно 14 или 90.</span>
+      <span>Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно.
+        «Включительно» означает, что значение переменной age может быть равно 14 или 90.</span>
       <button id="ageCheck">Проверка возраста</button>
-      <span>Напишите условие if для проверки, что значение переменной age НЕ находится в диапазоне 14 и 90 включительно. Напишите два варианта: первый с использованием оператора НЕ !, второй – без этого оператора.</span>
+
+      <span>Напишите условие if для проверки, что значение переменной age НЕ находится в диапазоне 14 и 90 включительно.
+        Напишите два варианта: первый с использованием оператора НЕ !, второй – без этого оператора.</span>
       <button id="ageCheckWithEM">Проверка возраста, но в условии используется "!"</button>
     </div>
   </section>
@@ -185,7 +189,7 @@
     </div>
   </section>
 
-  <section class="18th-assignment">
+  <section class="18th-assignment" id="to-18th-assignment">
     <div class="container">
       <h1>15 задание</h1>
       <p>Напишите код, выполнив задание из каждого пункта отдельной строкой:</p>
@@ -228,6 +232,56 @@
     </div>
   </section>
 
+  <section class="19th-assigment">
+    <div class="container">
+      <h1>17 задание</h1>
+      <p>Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+        Если объект salaries пуст, то результат должен быть 0.</p>
+      <button id="salarySum">Сумма зарплат</button>
+      <p>(для заполнения объекта используйте <a href="#to-18th-assignment">15 задание</a>)</p>
+    </div>
+  </section>
+
+  <section class="20th-assigment">
+    <div class="container">
+      <h1>18 задание</h1>
+      <p>Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.</p>
+      <button style="margin-bottom: 5px" id="showMenu">Показать menu</button>
+      <button id="prodOfNumeric">Умножить числа на 2</button>
+      <p>(для заполнения объекта используйте <a href="#to-18th-assignment">15 задание</a>)</p>
+    </div>
+  </section>
+
+  <section class="21st-assigment">
+    <div class="container">
+      <h1>19 задание</h1>
+      <p>Создайте объект calculator (калькулятор) с тремя методами:</p>
+      <ul>
+        <li>read() (читать) запрашивает два значения и сохраняет их как свойства объекта.</li>
+        <li>sum() (суммировать) возвращает сумму сохранённых значений.</li>
+        <li>mul() (умножить) перемножает сохранённые значения и возвращает результат.</li>
+      </ul>
+      <button id="read">Ввести числа</button>
+      <div class="calculator">
+        <p>sum()</p>
+        <div class="calculator-cell" id="sum">0</div>
+        <p>mul()</p>
+        <div class="calculator-cell" id="mul">0</div>
+      </div>
+    </div>
+  </section>
+  <section class="22nd-assigment">
+    <div class="container" id="parentDiv">
+      <h1>19 задание</h1>
+      <p>Создайте функцию-конструктор Calculator, которая создаёт объекты с тремя методами</p>
+      <ul>
+        <li>read() запрашивает два значения при помощи prompt и сохраняет их значение в свойствах объекта.</li>
+        <li>sum() возвращает сумму этих свойств.</li>
+        <li>mul() возвращает произведение этих свойств.</li>
+      </ul>
+      <button id="newCalculator">Добавить калькулятор</button>
+    </div>
+  </section>
 
 </main>
 

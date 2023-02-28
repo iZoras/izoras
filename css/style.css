@@ -22,6 +22,7 @@ h1 {
   flex-direction: column;
   border: 3px solid orange;
   padding: 15px;
+  overflow: hidden;
 }
 
 section {
@@ -35,6 +36,12 @@ section {
 }
 .buttons button {
   width: 100%;
+}
+
+.newCalculator {
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
