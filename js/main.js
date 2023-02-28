@@ -496,3 +496,32 @@ addCalcButton.addEventListener("click", function () {
     newP_4.textContent = "mul() =" + newCalculator.mul();
   })
 })
+
+/*23rd-assigment*/
+
+const sum = () => {
+  let a = +prompt("Введите a число", "");
+  let b = +prompt("Введите b число", "")
+  alert(a + b);
+}
+
+let sumButton = document.getElementById("sumOf");
+sumButton.addEventListener("click", sum);
+
+
+/*24th-assigment*/
+
+const readNumber = () => {
+  let number = prompt("Введите число", 0);
+  if (number === null || number === '') {
+    return null;
+  } else if (!isFinite(number)) {
+    readNumber();
+  } else {
+    return +number;
+  }
+
+}
+
+let readNumberButton = document.getElementById("readNumber");
+readNumberButton.addEventListener("click", readNumber);
