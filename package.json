@@ -15,6 +15,8 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "git": "^0.1.5"
+    "chai": "^4.3.7",
+    "git": "^0.1.5",
+    "mocha": "^10.2.0"
   }
 }

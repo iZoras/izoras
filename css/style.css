@@ -29,4 +29,12 @@ section {
   margin: 0 auto 100px auto;
 }
 
+.buttons {
+  margin: 0 auto;
+  width: 60%;
+}
+.buttons button {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

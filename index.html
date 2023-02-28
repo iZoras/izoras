@@ -25,13 +25,14 @@
 
 <body>
 <header class="header">
-  <a href = "page_1.html">Вторая страница</a>
+  <!--<a href = "page_1.html">Вторая страница</a>-->
 </header>
 <main class="main">
   <section class="first-assignment">
     <div class="container">
       <h1>1 задание</h1>
-      <span class="assignment">Создайте страницу, которая отобразит сообщение «Я JavaScript!».<br>Выполните это задание в песочнице, либо на вашем жёстком диске, где – неважно, главное – проверьте, что она работает.</span>
+      <span class="assignment">Создайте страницу, которая отобразит сообщение «Я JavaScript!».<br>
+        Выполните это задание в песочнице, либо на вашем жёстком диске, где – неважно, главное – проверьте, что она работает.</span>
       <button id="alert-clickable">Hello world</button>
     </div>
   </section>
@@ -51,7 +52,9 @@
     <div class="container">
       <h1>3 задание</h1>
       <ol>
-        <li><span>Создайте переменную для названия нашей планеты. Как бы вы её назвали?</span></li>
+        <li>
+          <span>Создайте переменную для названия нашей планеты. Как бы вы её назвали?</span>
+        </li>
         <li>
           <span>Создайте переменную для хранения имени текущего посетителя сайта. Как бы вы назвали такую переменную?</span>
         </li>
@@ -162,7 +165,7 @@
         Напишите код, который выводит все простые числа из интервала от 2 до n.
         Для n = 10 результат должен быть 2,3,5,7.
         P.S. Код также должен легко модифицироваться для любых других интервалов.</p>
-      <button id = "getPrimes">Простые числа от 2 до n</button>
+      <button id="getPrimes">Простые числа от 2 до n</button>
     </div>
   </section>
 
@@ -170,7 +173,7 @@
     <div class="container">
       <h1>13 задание</h1>
       <p>Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.</p>
-      <button id = "min">Меньшее из двух</button>
+      <button id="min">Меньшее из двух</button>
     </div>
   </section>
 
@@ -184,14 +187,49 @@
 
   <section class="18th-assignment">
     <div class="container">
-      <h1>14 задание</h1>
-      <p>Напишите функцию pow(x,n), которая возводит x в степень n и возвращает результат.</p>
-      <button id="pow1">Число в степень</button>
+      <h1>15 задание</h1>
+      <p>Напишите код, выполнив задание из каждого пункта отдельной строкой:</p>
+      <ol>
+        <li>Создайте пустой объект user.</li>
+        <li>Добавьте свойство name со значением John.</li>
+        <li>Добавьте свойство surname со значением Smith.</li>
+        <li>Измените значение свойства name на Pete.</li>
+        <li>Удалите свойство name из объекта.</li>
+      </ol>
+      <div class="buttons">
+        <button id="addProp">Добавить свойство</button>
+        <button id="changeProp">Изменить свойство</button>
+        <button id="deleteProp">Удалить свойство</button>
+        <button id="showObj">Показать содержимое объекта</button>
+      </div>
     </div>
   </section>
 
-</main>
+  <section class="19th-assignment">
+    <div class="container">
+      <h1>16 задание</h1>
+      <p>Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.</p>
+      <div style="text-align: center;">
+        <button class="code" id="isEmpty" style=" border: 1px solid black; margin-bottom: 5px;">
+          <code>
+            const human = {
+            name: "Джон",
+            age: 18,
+            gender: "Мужской"
+            };
+          </code>
+        </button>
+        <button class="code" id="isEmptyToo" style=" border: 1px solid black;">
+          <code>
+            const dog = {};
+          </code>
+        </button>
+      </div>
+    </div>
+  </section>
 
+
+</main>
 
 
 <script src="js/plugins.js"></script>

@@ -263,3 +263,84 @@ const powOf = () => {
 
 let powButton = document.getElementById("pow");
 powButton.addEventListener("click", powOf);
+
+/*17t-assigment*/
+
+const user = {};
+const addPropToObj = (obj) => {
+  let objProp = prompt('Введите название свойства');
+  let objPropValue = prompt('Введите значение');
+
+  obj[objProp] = objPropValue;
+}
+
+let addPropToObjButton = document.getElementById("addProp");
+addPropToObjButton.addEventListener("click", function () {
+  addPropToObj(user)
+});
+
+const changePropValue = (obj) => {
+  let objProp = prompt('Введите название свойства которое нужно изменить');
+  let objPropValue = prompt('Введите значение');
+  obj[objProp] = objPropValue;
+}
+
+let changePropValueButton = document.getElementById("changeProp");
+changePropValueButton.addEventListener("click", function () {
+  changePropValue(user)
+});
+
+const removePropFromObj = (obj) => {
+  let objProp = prompt('Введите название свойства которое нужно удалить');
+  delete obj[objProp];
+}
+
+let removePropFromObjButton = document.getElementById("deleteProp");
+removePropFromObjButton.addEventListener("click", function () {
+  removePropFromObj(user)
+});
+
+const showObject = (obj) => {
+  let objProps = "";
+  for (let key in obj) {
+    objProps += key + ' : ' + obj[key] + "\n";
+  }
+  alert(objProps);
+};
+
+
+let showObjectButton = document.getElementById("showObj");
+showObjectButton.addEventListener("click", function () {
+  showObject(user)
+});
+
+
+/*18t-assigment*/
+
+function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
+
+const human = {
+  name: "Джон",
+  age: 18,
+  gender: "Мужской"
+};
+
+const dog = {};
+
+let isEmptyButtonOne = document.getElementById("isEmpty");
+isEmptyButtonOne.addEventListener("click", function () {
+  alert(isEmpty(human))
+});
+
+let isEmptyButtonTwo = document.getElementById("isEmptyToo");
+isEmptyButtonTwo.addEventListener("click", function () {
+  alert(isEmpty(dog))
+});
+
+
+/*19t-assigment*/
