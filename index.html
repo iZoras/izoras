@@ -270,6 +270,7 @@
       </div>
     </div>
   </section>
+
   <section class="22nd-assigment">
     <div class="container" id="parentDiv">
       <h1>19 задание</h1>
@@ -286,7 +287,8 @@
   <section class="23nd-assigment">
     <div class="container">
       <h1>20 задание</h1>
-      <p>Создайте скрипт, который запрашивает ввод двух чисел (используйте prompt) и после показывает их сумму.</p>
+      <p>Создайте скрипт, который запрашивает ввод двух чисел
+        (используйте prompt) и после показывает их сумму.</p>
       <button id="sumOf">Сумма a + b</button>
     </div>
   </section>
@@ -294,8 +296,37 @@
   <section class="24nd-assigment">
     <div class="container">
       <h1>21 задание</h1>
-      <p>Создайте скрипт, который запрашивает ввод двух чисел (используйте prompt) и после показывает их сумму.</p>
+      <p>Создайте скрипт, который запрашивает ввод двух чисел
+        (используйте prompt) и после показывает их сумму.<br>
+        Функция должна возвращать числовое значение. <br>
+        Также надо разрешить пользователю остановить процесс ввода,
+        отправив пустую строку или нажав «Отмена».
+        В этом случае функция должна вернуть null.</p>
       <button id="readNumber">Введите число</button>
+    </div>
+  </section>
+
+  <section class="25nd-assigment">
+    <div class="container" id="parentDivForRandom">
+      <h1>22 задание</h1>
+      <p>Встроенный метод Math.random() возвращает случайное число от 0
+      (включительно) до 1 (но не включая 1) <br>
+      Напишите функцию random(min, max), которая генерирует случайное число
+      с плавающей точкой от min до max (но не включая max).<br>
+      Пример работы функции:</p>
+      <button id="random">Введите диапазон</button>
+    </div>
+  </section>
+
+  <section class="25nd-assigment">
+    <div class="container" id="parentDivForIntRandom">
+      <h1>23 задание</h1>
+      <p>Напишите функцию randomInteger(min, max), которая генерирует случайное целое (integer) число от min до max (включительно).
+
+      Любое число из интервала min...max должно появляться с одинаковой вероятностью.
+
+      Пример работы функции:</p>
+      <button id="randomInt">Введите диапазон</button>
     </div>
   </section>
 
@@ -303,7 +334,7 @@
 
 
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 
 </html>

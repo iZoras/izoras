@@ -10,8 +10,8 @@ clickableElement.addEventListener("click", displayAlert);
 
 function newDisplayAlert() {
   let name = "Джон";
-  admin = name;
-  alert(admin);
+  let isAdmin = name;
+  alert(isAdmin);
 }
 
 let newClickableElement = document.getElementById("admin");
@@ -514,14 +514,78 @@ sumButton.addEventListener("click", sum);
 const readNumber = () => {
   let number = prompt("Введите число", 0);
   if (number === null || number === '') {
-    return null;
-  } else if (!isFinite(number)) {
+    alert(null);
+  } else if (!(isFinite(number))) {
     readNumber();
   } else {
-    return +number;
+    alert(+number);
   }
-
 }
 
 let readNumberButton = document.getElementById("readNumber");
 readNumberButton.addEventListener("click", readNumber);
+
+
+/*25th-assigment*/
+
+function random() {
+  let a = +prompt("Введите a число", 0);
+  let b = +prompt("Введите b число", 0);
+  return Math.random() * (b - a + 1) + a;
+}
+
+let randomButton = document.getElementById("random");
+randomButton.addEventListener("click", function () {
+  let randomNumber = document.createElement("div");
+  randomNumber.setAttribute("class", "randomNumber");
+
+  let parentDivForRandom = document.getElementById("parentDivForRandom");
+  parentDivForRandom.appendChild(randomNumber);
+
+  randomNumber.textContent = random();
+});
+
+
+/*26th-assigment*/
+
+function randomInt() {
+  let a = +prompt("Введите a число", 0);
+  let b = +prompt("Введите b число", 0);
+  return Math.floor(Math.random() * (b - a + 1) + a);
+
+}
+
+let randomIntButton = document.getElementById("randomInt");
+randomIntButton.addEventListener("click", function () {
+  let randomNumber = document.createElement("div");
+  randomNumber.setAttribute("class", "randomNumber");
+
+  let parentDivForRandom = document.getElementById("parentDivForIntRandom");
+  parentDivForRandom.appendChild(randomNumber);
+
+  randomNumber.textContent = `${randomInt()}`;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*32nd-assigment*/
+
+
+
+
+
+
+
+
+
+
